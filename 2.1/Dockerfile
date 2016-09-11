@@ -6,8 +6,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends lib32z1 lib32nc
 
 ENV ANDROID_STUDIO /opt/android-studio
 
-ENV ANDROID_STUDIO_VERSION 2.1.0.9
-ENV ANDROID_STUDIO_URL https://dl.google.com/dl/android/studio/ide-zips/${ANDROID_STUDIO_VERSION}/android-studio-ide-143.2790544-linux.zip
+ENV ANDROID_STUDIO_VERSION 2.1.3.0
+ENV ANDROID_STUDIO_URL https://dl.google.com/dl/android/studio/ide-zips/${ANDROID_STUDIO_VERSION}/android-studio-ide-143.3101438-linux.zip
 ADD $ANDROID_STUDIO_URL /tmp/tmp.zip
 
 RUN unzip /tmp/tmp.zip -d /opt && rm /tmp/tmp.zip
